@@ -1,7 +1,11 @@
-<gamecontrol  (numberCreated)="number=$event"></gamecontrol>
+<gamecontrol  (NumberCreated)="number=$event"></gamecontrol>
 <br>
+{{number % 2}}
 <br>
-<even></even>
+<odd *ngIf ="number % 2; else narwhal"></odd>
+<ng-template #narwhal>
+
+    <br>
+    <even ></even>
+</ng-template>
 <br>
-\<br>\
-<odd></odd>
