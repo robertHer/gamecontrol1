@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  number:number 
+  even: number[] = [];
+  odd:number[]=[];
+
+
+
+
+
+
 }
+
+  
